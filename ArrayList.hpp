@@ -79,7 +79,7 @@ ArrayListIterator<T>& ArrayListIterator<T>::operator++() {
 
 template<typename T>
 ArrayListIterator<T> ArrayListIterator<T>::operator++(int) {
-    ArrayListIterator<T>() copy(ptr);
+    ArrayListIterator<T> copy(ptr);
     ++ptr;
     return copy;
 }
@@ -92,7 +92,7 @@ ArrayListIterator<T>& ArrayListIterator<T>::operator--() {
 
 template<typename T>
 ArrayListIterator<T> ArrayListIterator<T>::operator--(int) {
-    ArrayListIterator<T>() copy(ptr);
+    ArrayListIterator<T> copy(ptr);
     --ptr;
     return copy;
 }
